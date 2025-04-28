@@ -1,0 +1,34 @@
+name: flutterui
+description: "Traffic Sign predictor"
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  fancy_switch: ^0.0.4
+  flutter_bloc: ^9.1.0
+  tflite_flutter: ^0.11.0
+  csv: ^6.0.0
+  image: ^4.5.4
+  image_picker: ^1.1.2
+  permission_handler: ^12.0.0+1
+  flutter_launcher_icons: ^0.14.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo.png"
