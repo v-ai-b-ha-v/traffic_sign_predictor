@@ -1,11 +1,20 @@
 import 'package:flutter/material.dart';
 
 ThemeData darkMode = ThemeData(
-  colorScheme: ColorScheme.dark(
-  surface: Colors.grey.shade900,
-  primary: Colors.grey.shade600,
-  secondary: const Color.fromARGB(255, 42, 42, 42),
-  tertiary: Colors.grey.shade800,
-  inversePrimary: Colors.grey.shade300  
-  )
-);
+  useMaterial3: true,
+  brightness: Brightness.dark,
+  scaffoldBackgroundColor: const Color(0xFF0F172A), // Slate 900
+  colorScheme: const ColorScheme.dark(
+    surface: Color(0xFF1E293B),        // Slate 800
+    primary: Color(0xFF38BDF8),        // Sky 400
+    secondary: Color(0xFF6366F1),      // Indigo 500
+    tertiary: Color(0xFF334155),       // Slate 700
+    inversePrimary: Colors.white,
+    surfaceContainerHighest: Color(0xFF283548),
+  ),
+  cardTheme: CardThemeData(
+    color: const Color(0xFF1E293B),
+    elevation: 4,
+    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+  ),
+);

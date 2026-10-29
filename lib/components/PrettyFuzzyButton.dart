@@ -85,7 +85,7 @@ onTapCancel: () async {
             boxShadow: _isHovered
                 ? [
                     BoxShadow(
-                      color: secondaryColor.withOpacity(0.4),
+                      color: secondaryColor.withValues(alpha: 0.4),
                       spreadRadius: 5,
                       blurRadius: 10,
                       offset: const Offset(0, 10), // changes position of shadow
