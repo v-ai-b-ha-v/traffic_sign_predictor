@@ -5,7 +5,6 @@
 [![TensorFlow Lite](https://img.shields.io/badge/TensorFlow%20Lite-2.10+-FF6F00?logo=tensorflow&logoColor=white)](https://www.tensorflow.org/lite)
 [![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?logo=android&logoColor=white)](https://www.android.com)
 [![Accuracy](https://img.shields.io/badge/Accuracy-99%25-brightgreen)](#machine-learning-architecture)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 An intelligent, real-time traffic sign recognition mobile application built with **Flutter** and on-device **TensorFlow Lite (TFLite)**. Powered by a fine-tuned **EfficientNetB0** deep neural network, it recognizes **43 distinct categories** of traffic signs from the German Traffic Sign Recognition Benchmark (GTSRB) with **99%+ accuracy** — fully offline, with zero server dependencies.
 
@@ -30,7 +29,7 @@ An intelligent, real-time traffic sign recognition mobile application built with
 | **Head Architecture** | `GlobalAveragePooling2D` → `BatchNorm` → `Dropout(0.4)` → `Dense(512, ReLU)` → `BatchNorm` → `Dropout(0.3)` → `Dense(256, ReLU)` → `BatchNorm` → `Dropout(0.2)` → `Dense(43, Softmax)` |
 | **Input Shape** | `128 × 128 × 3` (RGB, float32 normalized to `[0.0, 1.0]`) |
 | **Output Shape** | `1 × 43` (Softmax probability distribution) |
-| **Dataset** | German Traffic Sign Recognition Benchmark ([GTSRB](https://benchmark.ini.rub.de/)) |
+| **Dataset** | German Traffic Sign Recognition Benchmark (GTSRB) |
 | **Quantization / Format**| Pure Float32 TensorFlow Lite (`.tflite`) |
 | **Inference Threading** | Multi-threaded execution (`threads = 4`) |
 
@@ -170,14 +169,8 @@ Generates tailored APKs for specific CPU architectures (`arm64-v8a`, `armeabi-v7
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
 ## 🤝 Acknowledgments
 
-- **Dataset:** [German Traffic Sign Recognition Benchmark (GTSRB)](https://benchmark.ini.rub.de/)
+- **Dataset:** German Traffic Sign Recognition Benchmark (GTSRB)
 - **TensorFlow Lite:** [TensorFlow Mobile Team](https://www.tensorflow.org/lite)
 - **Flutter Community:** For plugins including `tflite_flutter`, `image`, and `flutter_bloc`.
